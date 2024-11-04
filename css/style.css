@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(../fonts/Norse-Bold.woff2);
+}
+
+body {
+  font-family: system-ui, Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.side-bar {
+  height: 100%;
+  min-width: 30%;
+  background-color: olivedrab;
+  background-image: url("../images/green-leaf-halie-west-.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  background-size: cover;
+}
+
+.side-bar-logo {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.side-bar-logo p {
+  font: 4rem Norse-Bold;
+  color: #fff;
+  margin: 0;
+}
+
+.side-bar > p {
+  color: #ddd;
+  font-size: 12px;
+  margin-top: auto;
+}
+
+.side-bar a {
+  color: #ddd;
+}
+
+.side-bar a:visited {
+  color: #ddd;
+}
+
+
+.italic-span {
+  font-style: italic;
+}
+
+.form {
+  width: 100%;
+  padding-top: 70px;
+}
+
+form {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 5px #ccc;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+form .row {
+  display: flex;
+  gap: 30px;
+}
+
+form .row p {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h4 {
+  margin: 30px;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+input {
+  border: 1px solid #aaa;
+  padding: 4px;
+  font-family: inherit;
+  font-size: 100%;
+  width: 200px;
+  height: 30px;
+  margin: 0;
+}
+
+input:focus {
+  outline: 1px solid #0000e3;
+  box-shadow: 1px 1px 3px #0000aa;
+}
+
+input:user-invalid {
+  border: 2px solid #e30000;
+}
+
+button {
+  background-color: #596d48;
+  margin: 30px;
+  color: white;
+  border: 1px solid #e5e7eb;
+  padding: 6px 28px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transform: rotate(-1.5deg);
+}
+
+button + p {
+  margin: 0 0 20px 30px;
+}
+
+form p {
+  margin: 0 0 20px 0;
+}
+
+.form a {
+  color: #596d48;
+  text-decoration: none;
+}
+
